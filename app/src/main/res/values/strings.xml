@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjectPiano</string>
+    <string name="zast">Заставка</string>
+    <string name="about">О программе</string>
+    <string name="main">Главный экран</string>
+    <string name="zast_title">программа</string>
+    <string name="load">Загрузка...</string>
+</resources>
