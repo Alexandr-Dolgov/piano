@@ -11,6 +11,7 @@ import java.util.List;
 public class GameActivity extends AppCompatActivity {
 
     public List<Note> noteList = new ArrayList<>();
+    public StaffView staffView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +20,9 @@ public class GameActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String value = intent.getStringExtra("key");
 
-        View v = findViewById(R.id.game_view);
-
         setContentView(R.layout.activity_game);
+
+        staffView = (StaffView)findViewById(R.id.staff_view);
     }
 
 }

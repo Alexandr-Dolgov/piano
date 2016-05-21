@@ -134,14 +134,7 @@ public class PianoView extends View {
         gameActivity.noteList.add(note);
 
         //перерисовываем нотный стан
-        /*
-        LinearLayout game_view = (LinearLayout) findViewById(R.id.game_view);
-        game_view.invalidate();
-        */
-
-        //this.invalidate();
-        this.getRootView().invalidate();
-        //this.getRootView().getRootView().invalidate();
+        gameActivity.staffView.invalidate();
 
         return true;
     }

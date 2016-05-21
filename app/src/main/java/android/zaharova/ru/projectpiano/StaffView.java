@@ -39,13 +39,13 @@ public class StaffView extends View {
         for (Note note : noteList) {
             x = x + 100;
             switch (note.getName()) {
-                case DO: y = 100; break;
-                case RE: y = 150; break;
-                case MI: y = 200; break;
-                case FA: y = 250; break;
-                case SOL: y = 300; break;
-                case LYA: y = 350; break;
-                case SI: y = 400; break;
+                case DO: y = 10; break;
+                case RE: y = 15; break;
+                case MI: y = 20; break;
+                case FA: y = 25; break;
+                case SOL: y = 30; break;
+                case LYA: y = 35; break;
+                case SI: y = 40; break;
             }
 
             //отрисовываем одну ноту
@@ -72,12 +72,6 @@ public class StaffView extends View {
             canvas.drawLine(x1, y, x2, y, paint);
             y += distanceFromStuffLines;
         }
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        System.out.println("StaffView.onTouchEvent(...)");
-        return true;
     }
 
 }
